@@ -26,6 +26,26 @@ button {
     margin: 4px;
     padding: 9px 16px;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+#start { 
+    background-color: #4CAF50; 
+    color: white;
+}
+
+#pause { 
+    background-color: #f44336; 
+    color: white; 
+}
+
+#reset { 
+    background-color: #2196F3; 
+    color: white; 
+}
+
+#lap { 
+    background-color: #FF9800; 
+    color: white; 
 }
