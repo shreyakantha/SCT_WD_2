@@ -66,3 +66,30 @@ button {
     padding: 5px;
     border-bottom: 1px solid #ddd;
 }
+
+@media (max-width: 390px) {
+    .stopwatch {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #display {
+        font-size: 1.1em;
+        margin-bottom: 12px;
+    }
+
+    button {
+        font-size: 0.65em;
+        padding: 6px 10px;
+        margin: 2px;
+    }
+
+    #laps {
+        max-height: 130px;
+    }
+
+    #laps li {
+        font-size: 0.75em;
+        padding: 4px;
+    }
+}
