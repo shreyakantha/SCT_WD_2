@@ -49,3 +49,20 @@ button {
     background-color: #FF9800; 
     color: white; 
 }
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#laps ul {
+    list-style: none;
+    padding: 0;
+}
+
+#laps li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
