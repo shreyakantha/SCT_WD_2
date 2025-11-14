@@ -13,5 +13,19 @@ body {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    font-size: 2em;
+    margin-bottom: 18px;
+}
+
+button {
+    font-size: 0.9em;
+    margin: 4px;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 }
