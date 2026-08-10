@@ -79,7 +79,7 @@ function recordLap() {
 function renderLaps() {
     lapCountSpan.innerText = laps.length.toString().padStart(2, "0");
     if (laps.length === 0) {
-        lapsList.innerHTML = `<tr><td colspan="3" class="p-12 text-center opacity-30 italic font-body">No recorded data available. Press START to begin tracking.</td></tr>`;
+        lapsList.innerHTML = `<tr><td colspan="3" class="p-6 sm:p-12 text-center opacity-30 italic font-body">No recorded data available. Press START to begin tracking.</td></tr>`;
         return;
     }
 
@@ -87,9 +87,9 @@ function renderLaps() {
         const lapIndex = laps.length - index;
         return `
             <tr class="border-b-2 border-primary hover:bg-primary hover:text-on-primary transition-colors cursor-default">
-                <td class="p-4 border-r-2 border-primary font-black">LAP ${lapIndex.toString().padStart(2, "0")}</td>
-                <td class="p-4 timer-text">${timeToString(lap.duration)}</td>
-                <td class="p-4 text-right timer-text opacity-70">${timeToString(lap.total)}</td>
+                <td class="p-3 sm:p-4 border-r-2 border-primary font-black">LAP ${lapIndex.toString().padStart(2, "0")}</td>
+                <td class="p-3 sm:p-4 timer-text">${timeToString(lap.duration)}</td>
+                <td class="p-3 sm:p-4 text-right timer-text opacity-70">${timeToString(lap.total)}</td>
             </tr>
         `;
     }).join('');

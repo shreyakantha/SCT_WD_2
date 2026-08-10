@@ -89,33 +89,33 @@
 
         <!-- timer display section -->
         <section class="w-full mb-12 flex flex-col items-center">
-            <div class="w-full bg-surface-container border-4 border-primary p-12 neo-shadow mb-12 relative overflow-hidden text-center">
+            <div class="w-full bg-surface-container border-4 border-primary p-4 sm:p-12 neo-shadow mb-12 relative overflow-hidden text-center">
                 <!-- background elements -->
                 <div class="absolute -top-10 -right-10 opacity-10">
                     <span class="material-symbols-outlined text-[20rem]" style='font-variation-settings: "FILL" 1;'>timer</span>
                 </div>
                 <h1 class="font-headline font-black text-xs uppercase tracking-[0.4em] mb-4 text-secondary">Precision Measurement</h1>
-                <div class="timer-text font-headline font-black text-7xl md:text-9xl leading-none select-none tracking-tight" id="display">
+                <div class="timer-text font-headline font-black text-[11vw] sm:text-7xl md:text-9xl leading-none select-none tracking-tight" id="display">
                     00:00:00.00
                 </div>
             </div>
 
             <!-- controls grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-4xl">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 w-full max-w-4xl">
                 <!-- start button -->
-                <button class="disabled:opacity-40 disabled:cursor-not-allowed bg-primary-container text-on-primary-container border-4 border-primary py-6 px-4 font-headline font-black text-2xl uppercase tracking-widest neo-shadow transition-all hover:bg-white active:neo-shadow-active" id="startBtn">
+                <button class="disabled:opacity-40 disabled:cursor-not-allowed bg-primary-container text-on-primary-container border-4 border-primary py-6 px-2 sm:px-4 font-headline font-black text-xl sm:text-2xl uppercase tracking-widest neo-shadow transition-all hover:bg-white active:neo-shadow-active" id="startBtn">
                     START
                 </button>
                 <!-- pause button -->
-                <button class="disabled:opacity-40 disabled:cursor-not-allowed bg-secondary text-on-primary border-4 border-primary py-6 px-4 font-headline font-black text-2xl uppercase tracking-widest neo-shadow transition-all hover:bg-white hover:text-primary active:neo-shadow-active" disabled="" id="pauseBtn">
+                <button class="disabled:opacity-40 disabled:cursor-not-allowed bg-secondary text-on-primary border-4 border-primary py-6 px-2 sm:px-4 font-headline font-black text-xl sm:text-2xl uppercase tracking-widest neo-shadow transition-all hover:bg-white hover:text-primary active:neo-shadow-active" disabled="" id="pauseBtn">
                     PAUSE
                 </button>
                 <!-- lap button -->
-                <button class="disabled:opacity-40 disabled:cursor-not-allowed bg-tertiary text-on-primary border-4 border-primary py-6 px-4 font-headline font-black text-2xl uppercase tracking-widest neo-shadow transition-all hover:bg-white hover:text-primary active:neo-shadow-active" disabled="" id="lapBtn">
+                <button class="disabled:opacity-40 disabled:cursor-not-allowed bg-tertiary text-on-primary border-4 border-primary py-6 px-2 sm:px-4 font-headline font-black text-xl sm:text-2xl uppercase tracking-widest neo-shadow transition-all hover:bg-white hover:text-primary active:neo-shadow-active" disabled="" id="lapBtn">
                     LAP
                 </button>
                 <!-- reset button -->
-                <button class="bg-[#009944] text-on-primary border-4 border-primary py-6 px-4 font-headline font-black text-2xl uppercase tracking-widest neo-shadow transition-all hover:bg-white hover:text-primary active:neo-shadow-active" id="resetBtn">
+                <button class="bg-[#009944] text-on-primary border-4 border-primary py-6 px-2 sm:px-4 font-headline font-black text-xl sm:text-2xl uppercase tracking-widest neo-shadow transition-all hover:bg-white hover:text-primary active:neo-shadow-active" id="resetBtn">
                     RESET
                 </button>
             </div>
@@ -124,22 +124,22 @@
         <!-- lap list section -->
         <section class="w-full max-w-4xl">
             <div class="flex items-end justify-between mb-4">
-                <h2 class="font-headline font-black text-4xl uppercase tracking-tighter">Recorded Laps</h2>
+                <h2 class="font-headline font-black text-2xl sm:text-4xl uppercase tracking-tighter">Recorded Laps</h2>
                 <span class="font-headline font-bold text-lg px-2 bg-primary text-on-primary" id="lapCount">00</span>
             </div>
-            <div class="border-4 border-primary bg-surface h-80 overflow-y-auto neo-shadow">
+            <div class="border-4 border-primary bg-surface h-80 overflow-y-auto overflow-x-auto neo-shadow">
                 <table class="w-full text-left border-collapse">
                     <thead class="bg-primary text-on-primary sticky top-0 font-headline uppercase text-xs tracking-widest">
                         <tr>
-                            <th class="p-4 border-r-2 border-on-primary">Index</th>
-                            <th class="p-4">Duration</th>
-                            <th class="p-4 text-right">Cumulative</th>
+                            <th class="p-3 sm:p-4 border-r-2 border-on-primary">Index</th>
+                            <th class="p-3 sm:p-4">Duration</th>
+                            <th class="p-3 sm:p-4 text-right">Cumulative</th>
                         </tr>
                     </thead>
                     <tbody class="font-headline font-medium" id="lapsList">
                         <!-- lap rows are injected here -->
                         <tr>
-                            <td class="p-12 text-center opacity-30 italic font-body" colspan="3">No recorded data available. Press START to begin tracking.</td>
+                            <td class="p-6 sm:p-12 text-center opacity-30 italic font-body" colspan="3">No recorded data available. Press START to begin tracking.</td>
                         </tr>
                     </tbody>
                 </table>
