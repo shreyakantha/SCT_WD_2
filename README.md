@@ -121,7 +121,7 @@ Choose either of the following methods :
 ## 🚀 Deployment
 This project is deployed and hosted for free using **GitHub Pages**.
 
-**Live Site :** [https://shreyakantha.github.io/SCT_WD_2/](https://shreyakantha.github.io/SCT_WD_2/)
+**Live Site :** [CHRONOS. - Stopwatch Web Application](https://shreyakantha.github.io/SCT_WD_2/)
 
 To deploy your own copy :
 
